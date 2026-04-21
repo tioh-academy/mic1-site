@@ -201,3 +201,20 @@ h1, h2 { color: var(--violet); }
 .cta-section {
   padding-bottom: 72px;
 }
+
+.contact-card {
+  background: #fff;
+  border: 1px solid rgba(102, 0, 150, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-top: 1rem;
+}
+
+.contact-card a {
+  color: rgb(102, 0, 150);
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
