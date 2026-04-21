@@ -11,52 +11,149 @@
     <div class="container nav">
       <div class="brand">MIC1</div>
       <nav>
-        <a href="index.html">Accueil</a>
-        <a href="projects.html">Projets</a>
-        <a href="about.html">Le projet</a>
+        <a href="index.html" id="nav-home">Accueil</a>
+        <a href="projects.html" id="nav-projects">Projets</a>
+        <a href="about.html" id="nav-about">Le projet</a>
+        <a href="schools.html" id="nav-schools">Écoles</a>
+        <a href="contact.html" id="nav-contact">Contact</a>
       </nav>
+      <div class="lang-switch">
+        <button onclick="setLanguage('fr')">FR</button>
+        <button onclick="setLanguage('en')">EN</button>
+      </div>
     </div>
   </header>
 
   <main class="section">
     <div class="container">
-      <p class="eyebrow">Catalogue</p>
-      <h1>Choisir un projet</h1>
-      <p class="lead">Version statique de départ. Plus tard, cette page pourra être reliée à Supabase pour faire disparaître automatiquement les projets complets.</p>
+      <p class="eyebrow" id="eyebrow">Catalogue</p>
+      <h1 id="page-title">Choisir un projet</h1>
+      <p class="lead" id="page-lead">
+        Les élèves découvrent ici les projets proposés dans le cadre de MIC1. Chaque projet présente une question centrale, un niveau recommandé, des outils mathématiques mobilisés et un domaine d’application.
+      </p>
 
-      <div class="filters">
-        <button class="chip active">Tous</button>
-        <button class="chip">8e–9e</button>
-        <button class="chip">10e–11e</button>
-        <button class="chip">IA</button>
-        <button class="chip">Graphisme</button>
-      </div>
+      <section class="content-block">
+        <h2 id="how-title">Comment choisir un projet ?</h2>
+        <p id="how-text">
+          Les élèves consultent les projets disponibles, forment leur groupe, puis soumettent leur demande via le formulaire en ligne. Lorsqu’un projet est complet, il est indiqué comme indisponible sur la plateforme.
+        </p>
+      </section>
 
-      <div class="project-grid">
-        <article class="card project-card">
-          <span class="tag">8e–9e</span>
-          <h2>Une promotion est-elle vraiment avantageuse ?</h2>
-          <p><strong>Mathématiques :</strong> pourcentages, prix unitaires, comparaison.</p>
-          <p><strong>Domaine :</strong> Consommation</p>
-          <a class="btn btn-primary" href="#">Choisir ce projet</a>
-        </article>
+      <section class="content-block">
+        <h2 id="filters-title">Filtres rapides</h2>
+        <div class="filters">
+          <button class="chip active">Tous</button>
+          <button class="chip">8e–9e</button>
+          <button class="chip">10e–11e</button>
+          <button class="chip">Consommation</button>
+          <button class="chip">IA</button>
+          <button class="chip">Entrepreneuriat</button>
+          <button class="chip">Géométrie</button>
+        </div>
+      </section>
 
-        <article class="card project-card">
-          <span class="tag">10e–11e</span>
-          <h2>Comment une intelligence artificielle peut-elle classer des images ?</h2>
-          <p><strong>Mathématiques :</strong> distances, coordonnées, logique de classification.</p>
-          <p><strong>Domaine :</strong> IA / image</p>
-          <a class="btn btn-primary" href="#">Choisir ce projet</a>
-        </article>
+      <section class="content-block">
+        <h2 id="projects-title">Projets disponibles</h2>
 
-        <article class="card project-card closed">
-          <span class="tag">Complet</span>
-          <h2>Comment fixer le prix d’un produit ?</h2>
-          <p><strong>Mathématiques :</strong> coût de revient, marge, équations simples.</p>
-          <p><strong>Domaine :</strong> Entrepreneuriat</p>
-          <button class="btn btn-disabled" disabled>Projet complet</button>
-        </article>
-      </div>
+        <div class="project-grid">
+
+          <article class="card project-card">
+            <span class="tag">8e</span>
+            <h2>Une promotion est-elle vraiment avantageuse ?</h2>
+            <p><strong>Question centrale :</strong> Dans quelles conditions une promotion peut-elle être considérée comme réellement avantageuse lorsqu’on compare plusieurs offres ?</p>
+            <p><strong>Mathématiques :</strong> pourcentages, prix unitaires, comparaison, tableaux.</p>
+            <p><strong>Domaine :</strong> Consommation</p>
+            <p><strong>Niveau recommandé :</strong> 8e année</p>
+            <p><strong>Type de travail :</strong> Analyse appliquée et justification d’un choix.</p>
+            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+          </article>
+
+          <article class="card project-card">
+            <span class="tag">8e–9e</span>
+            <h2>Peut-on organiser une fête avec un petit budget sans rien oublier ?</h2>
+            <p><strong>Question centrale :</strong> Comment construire un modèle de budget permettant d’organiser un événement sous contrainte de coût, de priorités et de nombre d’invités ?</p>
+            <p><strong>Mathématiques :</strong> addition de coûts, estimation, marges, tableaux, organisation des dépenses.</p>
+            <p><strong>Domaine :</strong> Budget / vie quotidienne</p>
+            <p><strong>Niveau recommandé :</strong> 8e–9e année</p>
+            <p><strong>Type de travail :</strong> Modélisation simple, comparaison de scénarios.</p>
+            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+          </article>
+
+          <article class="card project-card">
+            <span class="tag">8e–9e</span>
+            <h2>Quel mode de transport coûte le moins pour se rendre à l’école ?</h2>
+            <p><strong>Question centrale :</strong> Selon quels critères et dans quelles conditions un mode de transport devient-il plus avantageux qu’un autre pour se rendre à l’école ?</p>
+            <p><strong>Mathématiques :</strong> coûts totaux, moyennes, tableaux comparatifs, graphiques.</p>
+            <p><strong>Domaine :</strong> Vie quotidienne</p>
+            <p><strong>Niveau recommandé :</strong> 8e–9e année</p>
+            <p><strong>Type de travail :</strong> Étude comparative et prise de décision.</p>
+            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+          </article>
+
+          <article class="card project-card">
+            <span class="tag">9e–10e</span>
+            <h2>Combien faut-il vendre pour atteindre un objectif d’argent ?</h2>
+            <p><strong>Question centrale :</strong> Comment relier quantité vendue, prix et bénéfice afin de déterminer le seuil nécessaire pour atteindre un objectif financier donné ?</p>
+            <p><strong>Mathématiques :</strong> équations simples, bénéfice, tableaux, seuil de rentabilité.</p>
+            <p><strong>Domaine :</strong> Mini-entreprise</p>
+            <p><strong>Niveau recommandé :</strong> 9e–10e année</p>
+            <p><strong>Type de travail :</strong> Algèbre appliquée, interprétation.</p>
+            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+          </article>
+
+          <article class="card project-card">
+            <span class="tag">10e–11e</span>
+            <h2>Comment une intelligence artificielle peut-elle classer des images ?</h2>
+            <p><strong>Question centrale :</strong> Comment construire et justifier une méthode simple de classification d’images à partir de caractéristiques mesurables et de critères mathématiques explicites ?</p>
+            <p><strong>Mathématiques :</strong> coordonnées, distances, logique, classification simple.</p>
+            <p><strong>Domaine :</strong> IA / image</p>
+            <p><strong>Niveau recommandé :</strong> 10e–11e année</p>
+            <p><strong>Type de travail :</strong> Analyse, modélisation et logique de décision.</p>
+            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+          </article>
+
+          <article class="card project-card">
+            <span class="tag">10e–11e</span>
+            <h2>Peut-on mesurer mathématiquement si deux images se ressemblent ?</h2>
+            <p><strong>Question centrale :</strong> Quels critères quantifiables permettent d’évaluer rigoureusement le degré de ressemblance entre deux images ou deux logos ?</p>
+            <p><strong>Mathématiques :</strong> géométrie, distances, proportions, mesures comparées.</p>
+            <p><strong>Domaine :</strong> IA / graphisme</p>
+            <p><strong>Niveau recommandé :</strong> 10e–11e année</p>
+            <p><strong>Type de travail :</strong> Analyse visuelle et mathématique.</p>
+            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+          </article>
+
+          <article class="card project-card">
+            <span class="tag">9e–10e</span>
+            <h2>Comment disposer des stands dans un espace limité ?</h2>
+            <p><strong>Question centrale :</strong> Quelle organisation géométrique permet d’optimiser simultanément le nombre de stands et la circulation dans un espace contraint ?</p>
+            <p><strong>Mathématiques :</strong> aire, périmètre, schématisation, optimisation spatiale.</p>
+            <p><strong>Domaine :</strong> Géométrie / événement</p>
+            <p><strong>Niveau recommandé :</strong> 9e–10e année</p>
+            <p><strong>Type de travail :</strong> Géométrie appliquée et optimisation.</p>
+            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+          </article>
+
+          <article class="card project-card closed">
+            <span class="tag">Complet</span>
+            <h2>Comment fixer le prix d’un produit ?</h2>
+            <p><strong>Question centrale :</strong> Comment déterminer un prix cohérent à partir du coût, du bénéfice visé et des scénarios possibles de vente ?</p>
+            <p><strong>Mathématiques :</strong> coût de revient, marge, pourcentages, équations simples.</p>
+            <p><strong>Domaine :</strong> Entrepreneuriat</p>
+            <p><strong>Niveau recommandé :</strong> 10e–11e année</p>
+            <p><strong>Type de travail :</strong> Modélisation économique simple.</p>
+            <button class="btn btn-disabled" disabled>Projet complet</button>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="content-block">
+        <h2 id="note-title">Important</h2>
+        <p id="note-text">
+          La liste affichée ici peut évoluer. Certains projets peuvent devenir complets selon le nombre de groupes déjà inscrits. Les élèves sont invités à consulter régulièrement la plateforme avant de soumettre leur choix.
+        </p>
+      </section>
     </div>
   </main>
 
@@ -65,5 +162,7 @@
       <p>MIC1 — Math in the City</p>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
