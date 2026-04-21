@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIC1 — Projets</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">MIC1</div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="about.html">Le projet</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <p class="eyebrow">Catalogue</p>
+      <h1>Choisir un projet</h1>
+      <p class="lead">Version statique de départ. Plus tard, cette page pourra être reliée à Supabase pour faire disparaître automatiquement les projets complets.</p>
+
+      <div class="filters">
+        <button class="chip active">Tous</button>
+        <button class="chip">8e–9e</button>
+        <button class="chip">10e–11e</button>
+        <button class="chip">IA</button>
+        <button class="chip">Graphisme</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="card project-card">
+          <span class="tag">8e–9e</span>
+          <h2>Une promotion est-elle vraiment avantageuse ?</h2>
+          <p><strong>Mathématiques :</strong> pourcentages, prix unitaires, comparaison.</p>
+          <p><strong>Domaine :</strong> Consommation</p>
+          <a class="btn btn-primary" href="#">Choisir ce projet</a>
+        </article>
+
+        <article class="card project-card">
+          <span class="tag">10e–11e</span>
+          <h2>Comment une intelligence artificielle peut-elle classer des images ?</h2>
+          <p><strong>Mathématiques :</strong> distances, coordonnées, logique de classification.</p>
+          <p><strong>Domaine :</strong> IA / image</p>
+          <a class="btn btn-primary" href="#">Choisir ce projet</a>
+        </article>
+
+        <article class="card project-card closed">
+          <span class="tag">Complet</span>
+          <h2>Comment fixer le prix d’un produit ?</h2>
+          <p><strong>Mathématiques :</strong> coût de revient, marge, équations simples.</p>
+          <p><strong>Domaine :</strong> Entrepreneuriat</p>
+          <button class="btn btn-disabled" disabled>Projet complet</button>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIC1 — Math in the City</p>
+    </div>
+  </footer>
+</body>
+</html>
