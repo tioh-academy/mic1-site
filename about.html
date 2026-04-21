@@ -11,24 +11,33 @@
     <div class="container nav">
       <div class="brand">MIC1</div>
       <nav>
-        <a href="index.html">Accueil</a>
-        <a href="projects.html">Projets</a>
-        <a href="about.html">Le projet</a>
+        <a href="index.html" id="nav-home">Accueil</a>
+        <a href="projects.html" id="nav-projects">Projets</a>
+        <a href="about.html" id="nav-about">Le projet</a>
       </nav>
+      <div class="lang-switch">
+        <button onclick="setLanguage('fr')">FR</button>
+        <button onclick="setLanguage('en')">EN</button>
+      </div>
     </div>
   </header>
 
   <main class="section">
     <div class="container narrow">
-      <p class="eyebrow">À propos</p>
-      <h1>Le projet MIC1</h1>
-      <p>MIC1 — Math in the City est une initiative qui montre comment les mathématiques permettent d’observer, comparer, organiser, modéliser, optimiser et argumenter à partir de situations concrètes.</p>
-      <h2>Public visé</h2>
-      <p>Élèves de la 8e à la 11e année.</p>
-      <h2>Format</h2>
-      <p>Travail en groupe, principalement à la maison, avec choix du projet en ligne et présentation finale.</p>
-      <h2>Couleurs</h2>
-      <p>Palette MIC1 : violet, lavande et or.</p>
+      <p class="eyebrow" id="eyebrow">À propos</p>
+      <h1 id="page-title">Le projet MIC1</h1>
+      <p id="project-description">
+        MIC1 — Math in the City est une initiative qui montre comment les mathématiques permettent d’observer, comparer, organiser, modéliser, optimiser et argumenter à partir de situations concrètes.
+      </p>
+
+      <h2 id="public-title">Public visé</h2>
+      <p id="public-target">Élèves de la 8e à la 11e année.</p>
+
+      <h2 id="format-title">Format</h2>
+      <p id="format-text">Travail en groupe, principalement à la maison, avec choix du projet en ligne et présentation finale.</p>
+
+      <h2 id="colors-title">Couleurs</h2>
+      <p id="colors-text">Palette MIC1 : violet, lavande et or.</p>
     </div>
   </main>
 
@@ -37,5 +46,7 @@
       <p>MIC1 — Math in the City</p>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
