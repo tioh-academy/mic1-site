@@ -173,3 +173,31 @@ h1, h2 { color: var(--violet); }
   text-align: center;
   margin-top: 1.2rem;
 }
+
+.lang-switch {
+  display: flex;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.lang-switch button {
+  background: white;
+  border: 1px solid var(--violet);
+  color: var(--violet);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.lang-switch button:hover {
+  background: var(--lavender);
+}
+
+.content-block {
+  margin-bottom: 2rem;
+}
+
+.cta-section {
+  padding-bottom: 72px;
+}
