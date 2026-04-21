@@ -11,22 +11,30 @@
     <div class="container nav">
       <div class="brand">MIC1</div>
       <nav>
-        <a href="index.html">Accueil</a>
-        <a href="projects.html">Projets</a>
-        <a href="about.html">Le projet</a>
+        <a href="index.html" id="nav-home">Accueil</a>
+        <a href="projects.html" id="nav-projects">Projets</a>
+        <a href="about.html" id="nav-about">Le projet</a>
+        <a href="schools.html" id="nav-schools">Écoles</a>
+        <a href="contact.html" id="nav-contact">Contact</a>
       </nav>
+      <div class="lang-switch">
+        <button onclick="setLanguage('fr')">FR</button>
+        <button onclick="setLanguage('en')">EN</button>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">Math in the City</p>
-        <h1>Des mathématiques concrètes, visibles et stimulantes</h1>
-        <p class="lead">MIC1 propose des mini-projets mathématiques guidés pour les élèves de la 8e à la 11e année, avec présentation finale, prix et médailles.</p>
+        <p class="eyebrow" id="hero-eyebrow">Math in the City</p>
+        <h1 id="hero-title">Des mathématiques concrètes, visibles et stimulantes</h1>
+        <p class="lead" id="hero-lead">
+          MIC1 propose des mini-projets mathématiques guidés pour les élèves de la 8e à la 11e année, avec présentation finale, prix et médailles.
+        </p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="projects.html">Voir les projets</a>
-          <a class="btn btn-secondary" href="about.html">Découvrir MIC1</a>
+          <a class="btn btn-primary" href="projects.html" id="btn-projects">Voir les projets</a>
+          <a class="btn btn-secondary" href="about.html" id="btn-about">Découvrir MIC1</a>
         </div>
       </div>
     </section>
@@ -34,17 +42,111 @@
     <section class="section">
       <div class="container grid-3">
         <article class="card">
-          <h2>Pour les élèves</h2>
-          <p>Choisir un projet, travailler en groupe et préparer une mini-conférence claire et bien structurée.</p>
+          <h2 id="students-title">Pour les élèves</h2>
+          <p id="students-text">Choisir un projet, travailler en groupe et préparer une mini-conférence claire et bien structurée.</p>
         </article>
         <article class="card">
-          <h2>Pour les écoles</h2>
-          <p>Un projet adaptable, avec catalogue, fiches détaillées, calendrier et documents d’accompagnement.</p>
+          <h2 id="schools-title">Pour les écoles</h2>
+          <p id="schools-text">Un projet adaptable, avec catalogue, fiches détaillées, calendrier et documents d’accompagnement.</p>
         </article>
         <article class="card">
-          <h2>Pour les parents</h2>
-          <p>Une information simple, une organisation claire et une valorisation du travail des élèves.</p>
+          <h2 id="parents-title">Pour les parents</h2>
+          <p id="parents-text">Une information simple, une organisation claire et une valorisation du travail des élèves.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container narrow">
+        <p class="eyebrow" id="how-eyebrow">Fonctionnement</p>
+        <h2 id="how-title">Comment le projet se déroule</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <h3 id="step1-title">Découverte des projets</h3>
+            <p id="step1-text">Les élèves consultent les projets proposés et identifient ceux qui correspondent à leur niveau et à leurs intérêts.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <h3 id="step2-title">Formation des groupes</h3>
+            <p id="step2-text">Les élèves forment leurs groupes et choisissent un projet à partir du catalogue en ligne.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <h3 id="step3-title">Travail guidé</h3>
+            <p id="step3-text">Les groupes travaillent principalement à la maison à l’aide d’une fiche détaillée et progressive.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">4</span>
+            <h3 id="step4-title">Présentation finale</h3>
+            <p id="step4-text">Chaque groupe présente son travail dans un cadre valorisant avec reconnaissance, prix et médailles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <p class="eyebrow" id="awards-eyebrow">Valorisation</p>
+        <h2 id="awards-title">Prix et médailles</h2>
+        <p id="awards-text">
+          Dans chacun des volets francophone et anglophone, les projets retenus recevront des prix et des médailles. Les autres élèves participants recevront également une médaille de reconnaissance.
+        </p>
+        <ul class="awards-list" id="awards-list">
+          <li>1er prix : 350 $ et une médaille</li>
+          <li>2e prix : 250 $ et une médaille</li>
+          <li>3e prix : 150 $ et une médaille</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container narrow">
+        <p class="eyebrow" id="support-eyebrow">Soutien</p>
+        <h2 id="support-title">Partenaires et soutien du projet</h2>
+        <p id="support-text">
+          MIC1 bénéficie d’un soutien institutionnel du Département de mathématiques de l’Université du Manitoba, ainsi que d’un soutien financier du Pacific Institute for the Mathematical Sciences (PIMS) et de l’Association francophone pour le savoir (Acfas).
+        </p>
+
+        <div class="logo-grid">
+          <div class="logo-card">
+            <img src="images/logo-umath.png" alt="Département de mathématiques de l’Université du Manitoba" />
+          </div>
+          <div class="logo-card">
+            <img src="images/logo-pims.png" alt="PIMS" />
+          </div>
+          <div class="logo-card">
+            <img src="images/logo-acfas.png" alt="Acfas" />
+          </div>
+        </div>
+
+        <div class="center-button">
+          <a class="btn btn-secondary" href="about.html" id="support-btn">Voir les détails du projet</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <p class="eyebrow" id="schools-eyebrow">Participation</p>
+        <h2 id="schools-section-title">Écoles participantes</h2>
+        <p id="schools-section-text">
+          Certaines écoles ont déjà accepté d’accueillir le projet ou ont manifesté un intérêt avancé. D’autres écoles peuvent encore rejoindre l’initiative.
+        </p>
+        <ul class="schools-list" id="schools-list">
+          <li>Collège Louis-Riel</li>
+          <li>Autres écoles en cours de confirmation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container narrow center-text">
+        <h2 id="final-cta-title">Explorer le catalogue des projets</h2>
+        <p id="final-cta-text">
+          Découvrez les projets disponibles, les niveaux recommandés et les outils mathématiques mobilisés.
+        </p>
+        <a class="btn btn-primary" href="projects.html" id="final-cta-btn">Accéder aux projets</a>
       </div>
     </section>
   </main>
@@ -54,5 +156,7 @@
       <p>MIC1 — Math in the City</p>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
