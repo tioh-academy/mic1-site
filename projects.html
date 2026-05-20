@@ -3,155 +3,353 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIC1 — Projets</title>
+  <title>MIC1 — Exemples de projets</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body data-page="projects">
   <header class="site-header">
     <div class="container nav">
       <div class="brand">MIC1</div>
+
       <nav>
-        <a href="index.html" id="nav-home">Accueil</a>
-        <a href="projects.html" id="nav-projects">Projets</a>
-        <a href="about.html" id="nav-about">Le projet</a>
-        <a href="schools.html" id="nav-schools">Écoles</a>
-        <a href="contact.html" id="nav-contact">Contact</a>
+        <a href="index.html"
+           data-fr="Accueil"
+           data-en="Home">Accueil</a>
+
+        <a href="projects.html"
+           data-fr="Projets"
+           data-en="Projects">Projets</a>
+
+        <a href="about.html"
+           data-fr="Le projet"
+           data-en="About">Le projet</a>
+
+        <a href="contact.html"
+           data-fr="Contact"
+           data-en="Contact">Contact</a>
       </nav>
+
       <div class="lang-switch">
-        <button onclick="setLanguage('fr')">FR</button>
-        <button onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="en">EN</button>
       </div>
     </div>
   </header>
 
   <main class="section">
     <div class="container">
-      <p class="eyebrow" id="eyebrow">Catalogue</p>
-      <h1 id="page-title">Choisir un projet</h1>
-      <p class="lead" id="page-lead">
-        Les élèves découvrent ici les projets proposés dans le cadre de MIC1. Chaque projet présente une question centrale, un niveau recommandé, des outils mathématiques mobilisés et un domaine d’application.
+      <p class="eyebrow"
+         data-fr="Aperçu"
+         data-en="Overview">
+        Aperçu
+      </p>
+
+      <h1
+        data-fr="Exemples de mini-projets mathématiques"
+        data-en="Examples of mathematical mini-projects">
+        Exemples de mini-projets mathématiques
+      </h1>
+
+      <p class="lead"
+         data-fr="MIC1 propose des mini-projets guidés qui montrent comment les mathématiques peuvent aider à comprendre des situations concrètes : consommation, budget, sport, intelligence artificielle, géométrie, design ou organisation d’un événement."
+         data-en="MIC1 offers guided mini-projects showing how mathematics can help understand real-life situations: consumer choices, budgeting, sports, artificial intelligence, geometry, design, or event planning.">
+        MIC1 propose des mini-projets guidés qui montrent comment les mathématiques peuvent aider à comprendre des situations concrètes : consommation, budget, sport, intelligence artificielle, géométrie, design ou organisation d’un événement.
       </p>
 
       <section class="content-block">
-        <h2 id="how-title">Comment choisir un projet ?</h2>
-        <p id="how-text">
-          Les élèves consultent les projets disponibles, forment leur groupe, puis soumettent leur demande via le formulaire en ligne. Lorsqu’un projet est complet, il est indiqué comme indisponible sur la plateforme.
+        <h2
+          data-fr="L’idée de cette page"
+          data-en="Purpose of this page">
+          L’idée de cette page
+        </h2>
+
+        <p
+          data-fr="Cette page présente quelques exemples de projets possibles. Elle sert à donner une vision claire de l’esprit de MIC1 : partir d’une vraie question, utiliser des outils mathématiques accessibles, puis expliquer les résultats de façon claire."
+          data-en="This page presents a few examples of possible projects. Its purpose is to give a clear picture of the spirit of MIC1: starting from a real question, using accessible mathematical tools, and explaining the results clearly.">
+          Cette page présente quelques exemples de projets possibles. Elle sert à donner une vision claire de l’esprit de MIC1 : partir d’une vraie question, utiliser des outils mathématiques accessibles, puis expliquer les résultats de façon claire.
         </p>
       </section>
 
       <section class="content-block">
-        <h2 id="filters-title">Filtres rapides</h2>
+        <h2
+          data-fr="Quelques thématiques abordées"
+          data-en="Some themes explored">
+          Quelques thématiques abordées
+        </h2>
+
         <div class="filters">
-          <button class="chip active">Tous</button>
-          <button class="chip">8e–9e</button>
-          <button class="chip">10e–11e</button>
-          <button class="chip">Consommation</button>
-          <button class="chip">IA</button>
-          <button class="chip">Entrepreneuriat</button>
-          <button class="chip">Géométrie</button>
+          <span class="chip">Consommation</span>
+          <span class="chip">Budget</span>
+          <span class="chip">Sport</span>
+          <span class="chip">IA</span>
+          <span class="chip">Géométrie</span>
+          <span class="chip">Design</span>
+          <span class="chip">Entrepreneuriat</span>
         </div>
       </section>
 
       <section class="content-block">
-        <h2 id="projects-title">Projets disponibles</h2>
+        <h2
+          data-fr="Exemples de projets"
+          data-en="Project examples">
+          Exemples de projets
+        </h2>
 
         <div class="project-grid">
 
           <article class="card project-card">
             <span class="tag">8e</span>
-            <h2>Une promotion est-elle vraiment avantageuse ?</h2>
-            <p><strong>Question centrale :</strong> Dans quelles conditions une promotion peut-elle être considérée comme réellement avantageuse lorsqu’on compare plusieurs offres ?</p>
-            <p><strong>Mathématiques :</strong> pourcentages, prix unitaires, comparaison, tableaux.</p>
-            <p><strong>Domaine :</strong> Consommation</p>
-            <p><strong>Niveau recommandé :</strong> 8e année</p>
-            <p><strong>Type de travail :</strong> Analyse appliquée et justification d’un choix.</p>
-            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+
+            <h2
+              data-fr="Une promotion est-elle vraiment avantageuse ?"
+              data-en="Is a sale really a good deal?">
+              Une promotion est-elle vraiment avantageuse ?
+            </h2>
+
+            <p
+              data-fr="Question centrale : dans quelles conditions une promotion peut-elle être considérée comme réellement avantageuse lorsqu’on compare plusieurs offres ?"
+              data-en="Central question: under what conditions can a sale be considered truly advantageous when comparing several offers?">
+              Question centrale : dans quelles conditions une promotion peut-elle être considérée comme réellement avantageuse lorsqu’on compare plusieurs offres ?
+            </p>
+
+            <p
+              data-fr="Mathématiques : pourcentages, prix unitaires, comparaison, tableaux."
+              data-en="Mathematics: percentages, unit prices, comparison, tables.">
+              Mathématiques : pourcentages, prix unitaires, comparaison, tableaux.
+            </p>
+
+            <p
+              data-fr="Domaine : consommation et vie quotidienne."
+              data-en="Field: consumer choices and everyday life.">
+              Domaine : consommation et vie quotidienne.
+            </p>
           </article>
 
           <article class="card project-card">
             <span class="tag">8e–9e</span>
-            <h2>Peut-on organiser une fête avec un petit budget sans rien oublier ?</h2>
-            <p><strong>Question centrale :</strong> Comment construire un modèle de budget permettant d’organiser un événement sous contrainte de coût, de priorités et de nombre d’invités ?</p>
-            <p><strong>Mathématiques :</strong> addition de coûts, estimation, marges, tableaux, organisation des dépenses.</p>
-            <p><strong>Domaine :</strong> Budget / vie quotidienne</p>
-            <p><strong>Niveau recommandé :</strong> 8e–9e année</p>
-            <p><strong>Type de travail :</strong> Modélisation simple, comparaison de scénarios.</p>
-            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+
+            <h2
+              data-fr="Peut-on organiser une fête avec un petit budget sans rien oublier ?"
+              data-en="Can we plan a party on a small budget without forgetting anything?">
+              Peut-on organiser une fête avec un petit budget sans rien oublier ?
+            </h2>
+
+            <p
+              data-fr="Question centrale : comment construire un budget réaliste en tenant compte du nombre d’invités, des priorités et des contraintes de coût ?"
+              data-en="Central question: how can we build a realistic budget while considering the number of guests, priorities, and cost constraints?">
+              Question centrale : comment construire un budget réaliste en tenant compte du nombre d’invités, des priorités et des contraintes de coût ?
+            </p>
+
+            <p
+              data-fr="Mathématiques : addition de coûts, estimation, marges, tableaux, organisation des dépenses."
+              data-en="Mathematics: adding costs, estimation, margins, tables, expense organization.">
+              Mathématiques : addition de coûts, estimation, marges, tableaux, organisation des dépenses.
+            </p>
+
+            <p
+              data-fr="Domaine : budget et organisation."
+              data-en="Field: budgeting and planning.">
+              Domaine : budget et organisation.
+            </p>
           </article>
 
           <article class="card project-card">
             <span class="tag">8e–9e</span>
-            <h2>Quel mode de transport coûte le moins pour se rendre à l’école ?</h2>
-            <p><strong>Question centrale :</strong> Selon quels critères et dans quelles conditions un mode de transport devient-il plus avantageux qu’un autre pour se rendre à l’école ?</p>
-            <p><strong>Mathématiques :</strong> coûts totaux, moyennes, tableaux comparatifs, graphiques.</p>
-            <p><strong>Domaine :</strong> Vie quotidienne</p>
-            <p><strong>Niveau recommandé :</strong> 8e–9e année</p>
-            <p><strong>Type de travail :</strong> Étude comparative et prise de décision.</p>
-            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+
+            <h2
+              data-fr="Quel mode de transport coûte le moins pour se rendre à l’école ?"
+              data-en="Which mode of transportation costs the least to get to school?">
+              Quel mode de transport coûte le moins pour se rendre à l’école ?
+            </h2>
+
+            <p
+              data-fr="Question centrale : selon quels critères un mode de transport devient-il plus avantageux qu’un autre ?"
+              data-en="Central question: under which criteria does one mode of transportation become more advantageous than another?">
+              Question centrale : selon quels critères un mode de transport devient-il plus avantageux qu’un autre ?
+            </p>
+
+            <p
+              data-fr="Mathématiques : coûts totaux, moyennes, tableaux comparatifs, graphiques."
+              data-en="Mathematics: total costs, averages, comparison tables, graphs.">
+              Mathématiques : coûts totaux, moyennes, tableaux comparatifs, graphiques.
+            </p>
+
+            <p
+              data-fr="Domaine : transport et prise de décision."
+              data-en="Field: transportation and decision-making.">
+              Domaine : transport et prise de décision.
+            </p>
           </article>
 
           <article class="card project-card">
             <span class="tag">9e–10e</span>
-            <h2>Combien faut-il vendre pour atteindre un objectif d’argent ?</h2>
-            <p><strong>Question centrale :</strong> Comment relier quantité vendue, prix et bénéfice afin de déterminer le seuil nécessaire pour atteindre un objectif financier donné ?</p>
-            <p><strong>Mathématiques :</strong> équations simples, bénéfice, tableaux, seuil de rentabilité.</p>
-            <p><strong>Domaine :</strong> Mini-entreprise</p>
-            <p><strong>Niveau recommandé :</strong> 9e–10e année</p>
-            <p><strong>Type de travail :</strong> Algèbre appliquée, interprétation.</p>
-            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
-          </article>
 
-          <article class="card project-card">
-            <span class="tag">10e–11e</span>
-            <h2>Comment une intelligence artificielle peut-elle classer des images ?</h2>
-            <p><strong>Question centrale :</strong> Comment construire et justifier une méthode simple de classification d’images à partir de caractéristiques mesurables et de critères mathématiques explicites ?</p>
-            <p><strong>Mathématiques :</strong> coordonnées, distances, logique, classification simple.</p>
-            <p><strong>Domaine :</strong> IA / image</p>
-            <p><strong>Niveau recommandé :</strong> 10e–11e année</p>
-            <p><strong>Type de travail :</strong> Analyse, modélisation et logique de décision.</p>
-            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
-          </article>
+            <h2
+              data-fr="Combien faut-il vendre pour atteindre un objectif d’argent ?"
+              data-en="How much should we sell to reach a financial goal?">
+              Combien faut-il vendre pour atteindre un objectif d’argent ?
+            </h2>
 
-          <article class="card project-card">
-            <span class="tag">10e–11e</span>
-            <h2>Peut-on mesurer mathématiquement si deux images se ressemblent ?</h2>
-            <p><strong>Question centrale :</strong> Quels critères quantifiables permettent d’évaluer rigoureusement le degré de ressemblance entre deux images ou deux logos ?</p>
-            <p><strong>Mathématiques :</strong> géométrie, distances, proportions, mesures comparées.</p>
-            <p><strong>Domaine :</strong> IA / graphisme</p>
-            <p><strong>Niveau recommandé :</strong> 10e–11e année</p>
-            <p><strong>Type de travail :</strong> Analyse visuelle et mathématique.</p>
-            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+            <p
+              data-fr="Question centrale : comment relier quantité vendue, prix, coût et bénéfice pour atteindre un objectif financier ?"
+              data-en="Central question: how can we connect quantity sold, price, cost, and profit to reach a financial goal?">
+              Question centrale : comment relier quantité vendue, prix, coût et bénéfice pour atteindre un objectif financier ?
+            </p>
+
+            <p
+              data-fr="Mathématiques : équations simples, bénéfice, tableaux, seuil de rentabilité."
+              data-en="Mathematics: simple equations, profit, tables, break-even point.">
+              Mathématiques : équations simples, bénéfice, tableaux, seuil de rentabilité.
+            </p>
+
+            <p
+              data-fr="Domaine : mini-entreprise et entrepreneuriat."
+              data-en="Field: mini-business and entrepreneurship.">
+              Domaine : mini-entreprise et entrepreneuriat.
+            </p>
           </article>
 
           <article class="card project-card">
             <span class="tag">9e–10e</span>
-            <h2>Comment disposer des stands dans un espace limité ?</h2>
-            <p><strong>Question centrale :</strong> Quelle organisation géométrique permet d’optimiser simultanément le nombre de stands et la circulation dans un espace contraint ?</p>
-            <p><strong>Mathématiques :</strong> aire, périmètre, schématisation, optimisation spatiale.</p>
-            <p><strong>Domaine :</strong> Géométrie / événement</p>
-            <p><strong>Niveau recommandé :</strong> 9e–10e année</p>
-            <p><strong>Type de travail :</strong> Géométrie appliquée et optimisation.</p>
-            <a class="btn btn-primary" href="#" target="_blank">Choisir ce projet</a>
+
+            <h2
+              data-fr="Comment disposer des stands dans un espace limité ?"
+              data-en="How can we arrange booths in a limited space?">
+              Comment disposer des stands dans un espace limité ?
+            </h2>
+
+            <p
+              data-fr="Question centrale : quelle organisation géométrique permet d’utiliser efficacement un espace tout en gardant une circulation fluide ?"
+              data-en="Central question: what geometric arrangement makes efficient use of space while keeping movement easy?">
+              Question centrale : quelle organisation géométrique permet d’utiliser efficacement un espace tout en gardant une circulation fluide ?
+            </p>
+
+            <p
+              data-fr="Mathématiques : aire, périmètre, schématisation, optimisation spatiale."
+              data-en="Mathematics: area, perimeter, diagrams, spatial optimization.">
+              Mathématiques : aire, périmètre, schématisation, optimisation spatiale.
+            </p>
+
+            <p
+              data-fr="Domaine : géométrie et organisation d’événement."
+              data-en="Field: geometry and event planning.">
+              Domaine : géométrie et organisation d’événement.
+            </p>
           </article>
 
-          <article class="card project-card closed">
-            <span class="tag">Complet</span>
-            <h2>Comment fixer le prix d’un produit ?</h2>
-            <p><strong>Question centrale :</strong> Comment déterminer un prix cohérent à partir du coût, du bénéfice visé et des scénarios possibles de vente ?</p>
-            <p><strong>Mathématiques :</strong> coût de revient, marge, pourcentages, équations simples.</p>
-            <p><strong>Domaine :</strong> Entrepreneuriat</p>
-            <p><strong>Niveau recommandé :</strong> 10e–11e année</p>
-            <p><strong>Type de travail :</strong> Modélisation économique simple.</p>
-            <button class="btn btn-disabled" disabled>Projet complet</button>
+          <article class="card project-card">
+            <span class="tag">10e–11e</span>
+
+            <h2
+              data-fr="Comment une intelligence artificielle peut-elle classer des images ?"
+              data-en="How can artificial intelligence classify images?">
+              Comment une intelligence artificielle peut-elle classer des images ?
+            </h2>
+
+            <p
+              data-fr="Question centrale : comment construire une méthode simple de classification à partir de caractéristiques mesurables ?"
+              data-en="Central question: how can we build a simple classification method using measurable features?">
+              Question centrale : comment construire une méthode simple de classification à partir de caractéristiques mesurables ?
+            </p>
+
+            <p
+              data-fr="Mathématiques : coordonnées, distances, logique, règles de décision."
+              data-en="Mathematics: coordinates, distances, logic, decision rules.">
+              Mathématiques : coordonnées, distances, logique, règles de décision.
+            </p>
+
+            <p
+              data-fr="Domaine : intelligence artificielle et image."
+              data-en="Field: artificial intelligence and images.">
+              Domaine : intelligence artificielle et image.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <span class="tag">10e–11e</span>
+
+            <h2
+              data-fr="Peut-on mesurer mathématiquement si deux images se ressemblent ?"
+              data-en="Can we mathematically measure whether two images look alike?">
+              Peut-on mesurer mathématiquement si deux images se ressemblent ?
+            </h2>
+
+            <p
+              data-fr="Question centrale : quels critères quantifiables permettent d’évaluer la ressemblance entre deux images, deux affiches ou deux logos ?"
+              data-en="Central question: which measurable criteria can be used to evaluate similarity between two images, posters, or logos?">
+              Question centrale : quels critères quantifiables permettent d’évaluer la ressemblance entre deux images, deux affiches ou deux logos ?
+            </p>
+
+            <p
+              data-fr="Mathématiques : géométrie, distances, proportions, mesures comparées."
+              data-en="Mathematics: geometry, distances, proportions, comparative measurements.">
+              Mathématiques : géométrie, distances, proportions, mesures comparées.
+            </p>
+
+            <p
+              data-fr="Domaine : image, design et analyse visuelle."
+              data-en="Field: images, design, and visual analysis.">
+              Domaine : image, design et analyse visuelle.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <span class="tag">10e–11e</span>
+
+            <h2
+              data-fr="Une IA peut-elle se tromper selon les données qu’on lui donne ?"
+              data-en="Can an AI make mistakes depending on the data it receives?">
+              Une IA peut-elle se tromper selon les données qu’on lui donne ?
+            </h2>
+
+            <p
+              data-fr="Question centrale : comment les données utilisées peuvent-elles influencer les erreurs d’un système automatique ?"
+              data-en="Central question: how can the data used influence the errors made by an automated system?">
+              Question centrale : comment les données utilisées peuvent-elles influencer les erreurs d’un système automatique ?
+            </p>
+
+            <p
+              data-fr="Mathématiques : proportions, taux d’erreur, tableaux de confusion, comparaison."
+              data-en="Mathematics: proportions, error rates, confusion matrices, comparison.">
+              Mathématiques : proportions, taux d’erreur, tableaux de confusion, comparaison.
+            </p>
+
+            <p
+              data-fr="Domaine : intelligence artificielle, données et société."
+              data-en="Field: artificial intelligence, data, and society.">
+              Domaine : intelligence artificielle, données et société.
+            </p>
           </article>
 
         </div>
       </section>
 
       <section class="content-block">
-        <h2 id="note-title">Important</h2>
-        <p id="note-text">
-          La liste affichée ici peut évoluer. Certains projets peuvent devenir complets selon le nombre de groupes déjà inscrits. Les élèves sont invités à consulter régulièrement la plateforme avant de soumettre leur choix.
+        <h2
+          data-fr="Ce que les élèves apprennent"
+          data-en="What students learn">
+          Ce que les élèves apprennent
+        </h2>
+
+        <p
+          data-fr="Chaque mini-projet amène les élèves à formuler une question, organiser des informations, effectuer des calculs, produire un tableau ou un graphique, puis présenter une conclusion claire. L’objectif n’est pas seulement de trouver une réponse, mais de montrer le raisonnement mathématique."
+          data-en="Each mini-project leads students to formulate a question, organize information, perform calculations, produce a table or graph, and present a clear conclusion. The goal is not only to find an answer, but to show the mathematical reasoning.">
+          Chaque mini-projet amène les élèves à formuler une question, organiser des informations, effectuer des calculs, produire un tableau ou un graphique, puis présenter une conclusion claire. L’objectif n’est pas seulement de trouver une réponse, mais de montrer le raisonnement mathématique.
+        </p>
+      </section>
+
+      <section class="content-block">
+        <h2
+          data-fr="Remarque"
+          data-en="Note">
+          Remarque
+        </h2>
+
+        <p
+          data-fr="Les exemples présentés ici donnent un aperçu du type d’activités proposées dans MIC1. Le contenu peut être adapté selon le niveau des élèves, le contexte de l’école et les objectifs pédagogiques."
+          data-en="The examples shown here give an overview of the type of activities offered in MIC1. The content can be adapted depending on students’ grade level, the school context, and pedagogical goals.">
+          Les exemples présentés ici donnent un aperçu du type d’activités proposées dans MIC1. Le contenu peut être adapté selon le niveau des élèves, le contexte de l’école et les objectifs pédagogiques.
         </p>
       </section>
     </div>
