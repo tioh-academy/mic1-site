@@ -6,20 +6,33 @@
   <title>MIC1 — Math in the City</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body data-page="index">
   <header class="site-header">
     <div class="container nav">
       <div class="brand">MIC1</div>
+
       <nav>
-        <a href="index.html" id="nav-home">Accueil</a>
-        <a href="projects.html" id="nav-projects">Projets</a>
-        <a href="about.html" id="nav-about">Le projet</a>
-        <a href="schools.html" id="nav-schools">Écoles</a>
-        <a href="contact.html" id="nav-contact">Contact</a>
+        <a href="index.html"
+           data-fr="Accueil"
+           data-en="Home">Accueil</a>
+
+        <a href="projects.html"
+           data-fr="Projets"
+           data-en="Projects">Projets</a>
+
+        <a href="about.html"
+           data-fr="Le projet"
+           data-en="About">Le projet</a>
+
+        <a href="contact.html"
+           data-fr="Contact"
+           data-en="Contact">Contact</a>
       </nav>
+
       <div class="lang-switch">
-        <button onclick="setLanguage('fr')">FR</button>
-        <button onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="en">EN</button>
       </div>
     </div>
   </header>
@@ -27,14 +40,36 @@
   <main>
     <section class="hero">
       <div class="container">
-        <p class="eyebrow" id="hero-eyebrow">Math in the City</p>
-        <h1 id="hero-title">Des mathématiques concrètes, visibles et stimulantes</h1>
-        <p class="lead" id="hero-lead">
-          MIC1 propose des mini-projets mathématiques guidés pour les élèves de la 8e à la 11e année, avec présentation finale, prix et médailles.
+        <p class="eyebrow"
+           data-fr="Math in the City"
+           data-en="Math in the City">
+          Math in the City
         </p>
+
+        <h1
+          data-fr="Des mathématiques concrètes, visibles et stimulantes"
+          data-en="Concrete, visible, and engaging mathematics">
+          Des mathématiques concrètes, visibles et stimulantes
+        </h1>
+
+        <p class="lead"
+           data-fr="MIC1 propose des mini-projets mathématiques guidés pour les élèves de la 8e à la 11e année, avec une présentation finale, des prix et des reconnaissances."
+           data-en="MIC1 offers guided mathematical mini-projects for students in Grades 8 to 11, with a final presentation, prizes, and recognition.">
+          MIC1 propose des mini-projets mathématiques guidés pour les élèves de la 8e à la 11e année, avec une présentation finale, des prix et des reconnaissances.
+        </p>
+
         <div class="cta-row">
-          <a class="btn btn-primary" href="projects.html" id="btn-projects">Voir les projets</a>
-          <a class="btn btn-secondary" href="about.html" id="btn-about">Découvrir MIC1</a>
+          <a class="btn btn-primary" href="projects.html"
+             data-fr="Voir les projets"
+             data-en="View projects">
+            Voir les projets
+          </a>
+
+          <a class="btn btn-secondary" href="about.html"
+             data-fr="Découvrir MIC1"
+             data-en="Discover MIC1">
+            Découvrir MIC1
+          </a>
         </div>
       </div>
     </section>
@@ -42,44 +77,126 @@
     <section class="section">
       <div class="container grid-3">
         <article class="card">
-          <h2 id="students-title">Pour les élèves</h2>
-          <p id="students-text">Choisir un projet, travailler en groupe et préparer une mini-conférence claire et bien structurée.</p>
+          <h2
+            data-fr="Pour les élèves"
+            data-en="For students">
+            Pour les élèves
+          </h2>
+
+          <p
+            data-fr="Choisir un projet, travailler en groupe et préparer une présentation claire et bien structurée."
+            data-en="Choose a project, work in a team, and prepare a clear and well-structured presentation.">
+            Choisir un projet, travailler en groupe et préparer une présentation claire et bien structurée.
+          </p>
         </article>
+
         <article class="card">
-          <h2 id="schools-title">Pour les écoles</h2>
-          <p id="schools-text">Un projet adaptable, avec catalogue, fiches détaillées, calendrier et documents d’accompagnement.</p>
+          <h2
+            data-fr="Pour les écoles"
+            data-en="For schools">
+            Pour les écoles
+          </h2>
+
+          <p
+            data-fr="Un projet adaptable, avec un catalogue de mini-projets, des fiches guidées, un calendrier et des documents d’accompagnement."
+            data-en="A flexible project with a catalogue of mini-projects, guided sheets, a timeline, and supporting documents.">
+            Un projet adaptable, avec un catalogue de mini-projets, des fiches guidées, un calendrier et des documents d’accompagnement.
+          </p>
         </article>
+
         <article class="card">
-          <h2 id="parents-title">Pour les parents</h2>
-          <p id="parents-text">Une information simple, une organisation claire et une valorisation du travail des élèves.</p>
+          <h2
+            data-fr="Pour les parents"
+            data-en="For parents">
+            Pour les parents
+          </h2>
+
+          <p
+            data-fr="Une organisation claire, une information simple et une valorisation du travail réalisé par les élèves."
+            data-en="Clear organization, simple information, and recognition of the work completed by students.">
+            Une organisation claire, une information simple et une valorisation du travail réalisé par les élèves.
+          </p>
         </article>
       </div>
     </section>
 
     <section class="section alt-section">
       <div class="container narrow">
-        <p class="eyebrow" id="how-eyebrow">Fonctionnement</p>
-        <h2 id="how-title">Comment le projet se déroule</h2>
+        <p class="eyebrow"
+           data-fr="Fonctionnement"
+           data-en="How it works">
+          Fonctionnement
+        </p>
+
+        <h2
+          data-fr="Comment le projet se déroule"
+          data-en="How the project works">
+          Comment le projet se déroule
+        </h2>
+
         <div class="steps-grid">
           <div class="step-card">
             <span class="step-number">1</span>
-            <h3 id="step1-title">Découverte des projets</h3>
-            <p id="step1-text">Les élèves consultent les projets proposés et identifient ceux qui correspondent à leur niveau et à leurs intérêts.</p>
+
+            <h3
+              data-fr="Découverte des projets"
+              data-en="Project discovery">
+              Découverte des projets
+            </h3>
+
+            <p
+              data-fr="Les élèves découvrent les projets proposés et identifient ceux qui correspondent à leur niveau et à leurs intérêts."
+              data-en="Students explore the proposed projects and identify those that match their level and interests.">
+              Les élèves découvrent les projets proposés et identifient ceux qui correspondent à leur niveau et à leurs intérêts.
+            </p>
           </div>
+
           <div class="step-card">
             <span class="step-number">2</span>
-            <h3 id="step2-title">Formation des groupes</h3>
-            <p id="step2-text">Les élèves forment leurs groupes et choisissent un projet à partir du catalogue en ligne.</p>
+
+            <h3
+              data-fr="Formation des groupes"
+              data-en="Team formation">
+              Formation des groupes
+            </h3>
+
+            <p
+              data-fr="Les élèves forment leurs groupes et choisissent un mini-projet à partir du catalogue."
+              data-en="Students form teams and choose a mini-project from the catalogue.">
+              Les élèves forment leurs groupes et choisissent un mini-projet à partir du catalogue.
+            </p>
           </div>
+
           <div class="step-card">
             <span class="step-number">3</span>
-            <h3 id="step3-title">Travail guidé</h3>
-            <p id="step3-text">Les groupes travaillent principalement à la maison à l’aide d’une fiche détaillée et progressive.</p>
+
+            <h3
+              data-fr="Travail guidé"
+              data-en="Guided work">
+              Travail guidé
+            </h3>
+
+            <p
+              data-fr="Les groupes avancent à l’aide d’une fiche détaillée qui les guide étape par étape."
+              data-en="Teams work with a detailed sheet that guides them step by step.">
+              Les groupes avancent à l’aide d’une fiche détaillée qui les guide étape par étape.
+            </p>
           </div>
+
           <div class="step-card">
             <span class="step-number">4</span>
-            <h3 id="step4-title">Présentation finale</h3>
-            <p id="step4-text">Chaque groupe présente son travail dans un cadre valorisant avec reconnaissance, prix et médailles.</p>
+
+            <h3
+              data-fr="Présentation finale"
+              data-en="Final presentation">
+              Présentation finale
+            </h3>
+
+            <p
+              data-fr="Chaque groupe présente son travail dans un cadre valorisant, avec reconnaissance, prix et médailles."
+              data-en="Each team presents its work in a rewarding setting, with recognition, prizes, and medals.">
+              Chaque groupe présente son travail dans un cadre valorisant, avec reconnaissance, prix et médailles.
+            </p>
           </div>
         </div>
       </div>
@@ -87,66 +204,145 @@
 
     <section class="section">
       <div class="container narrow">
-        <p class="eyebrow" id="awards-eyebrow">Valorisation</p>
-        <h2 id="awards-title">Prix et médailles</h2>
-        <p id="awards-text">
-          Dans chacun des volets francophone et anglophone, les projets retenus recevront des prix et des médailles. Les autres élèves participants recevront également une médaille de reconnaissance.
+        <p class="eyebrow"
+           data-fr="Valorisation"
+           data-en="Recognition">
+          Valorisation
         </p>
-        <ul class="awards-list" id="awards-list">
-          <li>1er prix : 350 $ et une médaille</li>
-          <li>2e prix : 250 $ et une médaille</li>
-          <li>3e prix : 150 $ et une médaille</li>
+
+        <h2
+          data-fr="Prix et médailles"
+          data-en="Prizes and medals">
+          Prix et médailles
+        </h2>
+
+        <p
+          data-fr="Les projets retenus recevront des prix et des médailles. Les élèves participants recevront également une reconnaissance pour leur engagement."
+          data-en="Selected projects will receive prizes and medals. Participating students will also receive recognition for their engagement.">
+          Les projets retenus recevront des prix et des médailles. Les élèves participants recevront également une reconnaissance pour leur engagement.
+        </p>
+
+        <ul class="awards-list">
+          <li
+            data-fr="1er prix : 350 $ et une médaille"
+            data-en="1st prize: $350 and a medal">
+            1er prix : 350 $ et une médaille
+          </li>
+
+          <li
+            data-fr="2e prix : 250 $ et une médaille"
+            data-en="2nd prize: $250 and a medal">
+            2e prix : 250 $ et une médaille
+          </li>
+
+          <li
+            data-fr="3e prix : 150 $ et une médaille"
+            data-en="3rd prize: $150 and a medal">
+            3e prix : 150 $ et une médaille
+          </li>
         </ul>
       </div>
     </section>
 
     <section class="section alt-section">
       <div class="container narrow">
-        <p class="eyebrow" id="support-eyebrow">Soutien</p>
-        <h2 id="support-title">Partenaires et soutien du projet</h2>
-        <p id="support-text">
-          MIC1 bénéficie d’un soutien institutionnel du Département de mathématiques de l’Université du Manitoba, ainsi que d’un soutien financier du Pacific Institute for the Mathematical Sciences (PIMS) et de l’Association francophone pour le savoir (Acfas).
+        <p class="eyebrow"
+           data-fr="Soutien"
+           data-en="Support">
+          Soutien
+        </p>
+
+        <h2
+          data-fr="Un projet principalement soutenu par PIMS"
+          data-en="A project primarily supported by PIMS">
+          Un projet principalement soutenu par PIMS
+        </h2>
+
+        <p
+          data-fr="MIC1 – Math in the City est principalement soutenu par le Pacific Institute for the Mathematical Sciences (PIMS). Le projet bénéficie aussi de l’appui de l’Acfas et de l’Université du Manitoba."
+          data-en="MIC1 – Math in the City is primarily supported by the Pacific Institute for the Mathematical Sciences (PIMS). The project also receives support from Acfas and the University of Manitoba.">
+          MIC1 – Math in the City est principalement soutenu par le Pacific Institute for the Mathematical Sciences (PIMS). Le projet bénéficie aussi de l’appui de l’Acfas et de l’Université du Manitoba.
         </p>
 
         <div class="logo-grid">
           <div class="logo-card">
-            <img src="images/logo-umath.png" alt="Département de mathématiques de l’Université du Manitoba" />
+            <img src="images/logo-pims.png" alt="Pacific Institute for the Mathematical Sciences" />
           </div>
-          <div class="logo-card">
-            <img src="images/logo-pims.png" alt="PIMS" />
-          </div>
+
           <div class="logo-card">
             <img src="images/logo-acfas.png" alt="Acfas" />
+          </div>
+
+          <div class="logo-card">
+            <img src="images/logo-umath.png" alt="University of Manitoba Department of Mathematics" />
           </div>
         </div>
 
         <div class="center-button">
-          <a class="btn btn-secondary" href="about.html" id="support-btn">Voir les détails du projet</a>
+          <a class="btn btn-secondary" href="about.html"
+             data-fr="Voir les détails du projet"
+             data-en="See project details">
+            Voir les détails du projet
+          </a>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container narrow">
-        <p class="eyebrow" id="schools-eyebrow">Participation</p>
-        <h2 id="schools-section-title">Écoles participantes</h2>
-        <p id="schools-section-text">
+        <p class="eyebrow"
+           data-fr="Participation"
+           data-en="Participation">
+          Participation
+        </p>
+
+        <h2
+          data-fr="Écoles participantes"
+          data-en="Participating schools">
+          Écoles participantes
+        </h2>
+
+        <p
+          data-fr="Certaines écoles ont déjà accepté d’accueillir le projet ou ont manifesté un intérêt avancé. D’autres écoles peuvent encore rejoindre l’initiative."
+          data-en="Some schools have already agreed to host the project or have expressed strong interest. Other schools can still join the initiative.">
           Certaines écoles ont déjà accepté d’accueillir le projet ou ont manifesté un intérêt avancé. D’autres écoles peuvent encore rejoindre l’initiative.
         </p>
-        <ul class="schools-list" id="schools-list">
-          <li>Collège Louis-Riel</li>
-          <li>Autres écoles en cours de confirmation</li>
+
+        <ul class="schools-list">
+          <li
+            data-fr="Collège Louis-Riel"
+            data-en="Collège Louis-Riel">
+            Collège Louis-Riel
+          </li>
+
+          <li
+            data-fr="Autres écoles en cours de confirmation"
+            data-en="Other schools to be confirmed">
+            Autres écoles en cours de confirmation
+          </li>
         </ul>
       </div>
     </section>
 
     <section class="section cta-section">
       <div class="container narrow center-text">
-        <h2 id="final-cta-title">Explorer le catalogue des projets</h2>
-        <p id="final-cta-text">
+        <h2
+          data-fr="Explorer le catalogue des projets"
+          data-en="Explore the project catalogue">
+          Explorer le catalogue des projets
+        </h2>
+
+        <p
+          data-fr="Découvrez les projets disponibles, les niveaux recommandés et les outils mathématiques mobilisés."
+          data-en="Discover the available projects, recommended grade levels, and mathematical tools involved.">
           Découvrez les projets disponibles, les niveaux recommandés et les outils mathématiques mobilisés.
         </p>
-        <a class="btn btn-primary" href="projects.html" id="final-cta-btn">Accéder aux projets</a>
+
+        <a class="btn btn-primary" href="projects.html"
+           data-fr="Accéder aux projets"
+           data-en="Go to projects">
+          Accéder aux projets
+        </a>
       </div>
     </section>
   </main>
@@ -157,6 +353,6 @@
     </div>
   </footer>
 
-   <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
